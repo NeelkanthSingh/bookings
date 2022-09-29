@@ -40,7 +40,7 @@ func main() {
 	repo := handlers.NewRepo(&app)
 	handlers.NewHandlers(repo)
 
-	render.NewTemplate(&app)
+	render.NewTemplates(&app)
 
 	fmt.Println(fmt.Sprintf("Starting application on port %s", port))
 
